@@ -222,6 +222,30 @@
     .navlinks{display:none;}
     .intro-card{flex-direction:column; text-align:center;}
   }
+
+    /* Liens de profils académiques & pro */
+  .profile-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+  .profile-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--slate);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 6px 12px;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+  }
+  .profile-links a:hover {
+    color: var(--ink);
+    border-color: var(--teal);
+    background: var(--teal-light);
+  }
 </style>
 </head>
 <body>
@@ -403,31 +427,50 @@
   </div>
 </section> -->
 
-<section id="contact">
-  <div class="wrap contact-grid">
-    <div>
-      <div class="eyebrow">Contact</div>
-      <h2 style="margin-top:10px;">Parlons de votre projet</h2>
-      <div class="contact-list">
-        <div><span class="label">Email</span><a href="mailto:vaghibaudo@gmail.com">vaghibaudo@gmail.com</a></div>
-        <div><span class="label">SIRET</span><span>107 664 666 00016</span></div>
-        <div><span class="label">Site web</span><span>https://valentinghibaudo.github.io/BioSignal_Expertise/</span></div>
-        <div><span class="label">Public</span><span>Universités, CNRS, INSERM, CHU, MedTech, BioTech</span></div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <div class="section-head" style="margin-bottom:24px;">
+            <span class="eyebrow">Contact</span>
+            <h2>Parlons de votre projet</h2>
+            <p>Disponibilités pour des missions de conseil, collaborations de recherche ou recontres méthodologiques.</p>
+          </div>
+          
+          <div class="contact-list">
+            <div>
+              <span>Email</span>
+              <strong><a href="mailto:vaghibaudo@gmail.com">vaghibaudo@gmail.com</a></strong>
+            </div>
+            <div>
+              <span>SIRET</span>
+              <strong>107 664 666 00016</strong>
+            </div>
+            <div>
+              <span>Site web</span>
+              <strong><a href="https://valentinghibaudo.github.io/BioSignal_Expertise/</a></strong>
+            </div>
+          </div>
+
+          <!-- Vos profils professionnels et académiques -->
+          <div class="profile-links">
+            <a href="https://www.linkedin.com/in/valentin-ghibaudo-1a0a65221/" target="_blank" rel="noopener noreferrer" title="LinkedIn">🌐 LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=iITqN0MAAAAJ&hl=fr&oi=ao" target="_blank" rel="noopener noreferrer" title="Google Scholar">🎓 Scholar</a>
+            <a href="https://orcid.org/0009-0008-3152-476X" target="_blank" rel="noopener noreferrer" title="ORCID">🆔 ORCID</a>
+            <a href="https://github.com/ValentinGhibaudo" target="_blank" rel="noopener noreferrer" title="GitHub Personnel">💻 GitHub</a>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact (ou fermeture de la grille) -->
+        <div>
+          <!-- Si vous avez un formulaire <form>, remettez son code ici -->
+        </div>
       </div>
     </div>
-    <form action="mailto:vaghibaudo@gmail.com" method="post" enctype="text/plain">
-      <label for="nom">Nom</label>
-      <input id="nom" name="nom" type="text" required>
-      <label for="org">Organisme / laboratoire</label>
-      <input id="org" name="organisme" type="text">
-      <label for="mail">Email</label>
-      <input id="mail" name="email" type="email" required>
-      <label for="msg">Votre projet</label>
-      <textarea id="msg" name="message" rows="4" required></textarea>
-      <button type="submit">Envoyer la demande</button>
-    </form>
-  </div>
-</section>
+  </section>
+
+
 
 <footer>
   <div class="wrap">
