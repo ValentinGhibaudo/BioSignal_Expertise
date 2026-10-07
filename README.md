@@ -65,4 +65,5 @@ Targeted support for specific methodological, statistical, or signal-processing 
 ## Contact
 
 **Valentin Ghibaudo**
-📧 Mail : vaghibaudo@gmail.com
+    - Mail : vaghibaudo@gmail.com
+    - Website : https://valentinghibaudo.github.io/BioSignal_Expertise/
