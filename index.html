@@ -57,10 +57,16 @@
     height:72px;
   }
   .brand{
-    font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem;
-    display:flex; align-items:baseline; gap:8px; color:var(--ink);
+    display:flex; align-items:center; color:var(--ink);
+    text-decoration:none;
   }
-  .brand .dot{color:var(--teal);}
+  .brand img{
+    display:block;
+    width:auto;
+    height:80px;
+    max-width:220px;
+    object-fit:contain;
+  }
   .navlinks{display:flex; gap:34px; font-size:0.92rem;}
   .navlinks a{
     text-decoration:none; color:var(--slate);
@@ -221,6 +227,7 @@
     .about-grid, .contact-grid{grid-template-columns:1fr;}
     .navlinks{display:none;}
     .intro-card{flex-direction:column; text-align:center;}
+    .brand img{height:42px; max-width:190px;}
   }
 
     /* Liens de profils académiques & pro */
@@ -252,7 +259,9 @@
 
 <header>
   <nav class="wrap">
-    <div class="brand">BioSignal<span class="dot">·</span>Expertise</div>
+    <a class="brand" href="#accueil" aria-label="BioSignal Expertise — Accueil">
+      <img src="img/logo.png" alt="BioSignal Expertise">
+    </a>
     <div class="navlinks">
       <!-- <a href="#accueil">Accueil</a> -->
       <a href="#accueil">Expertise</a>
@@ -283,13 +292,13 @@
     </div>
 
     <div class="hero-top">
-      <span class="eyebrow">Conseil scientifique · Méthodologie · Statistiques avancées</span>
+      <span class="eyebrow">Conseil scientifique · Méthodologie · Statistiques avancées · Biosignaux</span>
       <h1>L'expertise scientifique <em>indépendante</em> pour vos données neuro‑physiologiques</h1>
       <p class="lede">BioSignal Expertise accompagne les équipes de recherche publiques et privées dans la conception, l'analyse et la valorisation de leurs données expérimentales.</p>
-      <div class="hero-ctas">
+      <!-- <div class="hero-ctas">
         <a class="btn-primary" href="#contact">Demander un devis</a>
         <a class="btn-ghost" href="#prestations">Voir les prestations</a>
-      </div>
+      </div> -->
     </div>
 
   </div>
@@ -325,7 +334,7 @@
           <!-- <div class="img-fallback">Ajoutez une figure<br>« figure-methodo.jpg »</div> -->
         </div>
         <div class="mark"><span></span></div>
-        <h3>De la méthodo à la publication</h3>
+        <h3>De la méthodologie à la publication</h3>
         <p>Un accompagnement à toutes les étapes : conception méthodologique, conseil en analyse ou réalisation des analyses, statistiques avancées, réalisation de figures et aide à la rédaction des sections Méthodes et Résultats.</p>
       </div>
     </div>
@@ -345,43 +354,44 @@
         <h3>Audit scientifique et méthodologique</h3>
         <p>Évaluation critique d'un projet de recherche, d'un protocole ou d'une stratégie d'analyse.</p>
         <ul><li>Rapport d'expertise</li><li>Recommandations méthodologiques</li><li>Identification des points critiques</li></ul>
-        <span class="tag">Sur devis</span>
+        <!-- <span class="tag">Sur devis</span> -->
       </div>
       <div class="card">
         <div class="num">02</div>
         <h3>Conseil en analyse de données</h3>
         <p>Accompagnement sur l'ensemble de la chaîne : des données brutes à l'interprétation.</p>
         <ul><li>Traitement du signal</li><li>Analyses statistiques</li><li>Visualisation & interprétation</li></ul>
-        <span class="tag">Sur devis</span>
+        <!-- <span class="tag">Sur devis</span> -->
       </div>
       <div class="card">
         <div class="num">03</div>
         <h3>Analyse avancée de signaux physiologiques</h3>
-        <p>Expertise spécialisée EEG, ECG, respiration, HRV et couplage cardio‑respiratoire.</p>
-        <ul><li>Pipelines reproductibles</li><li>Analyses multimodales</li></ul>
-        <span class="tag">Sur devis</span>
+        <p>Développement de scripts Python pour l'analyse de données EEG, ECG, respiratoire.</p>
+        <ul><li>Pipelines reproductibles</li><li>Analyses multimodales</li><li>Code open-source</li></ul>
+        <!-- <span class="tag">Sur devis</span> -->
       </div>
       <div class="card">
         <div class="num">04</div>
-        <h3>Expertise statistique</h3>
-        <p>Modèles linéaires, mixtes +/- généralisés, statistiques multivariées.</p>
-        <ul><li>Validation des hypothèses</li><li>Accompagnement à l'interprétation</li></ul>
-        <span class="tag">Sur devis</span>
+        <h3>Pédagogie</h3>
+        <p>Explication des méthodes d'analyse et interprétation des résultats</p>
+        <ul><li>Méthodes de traitement du signal</li><li>Génèse des rythmes cardio-respiratoires</li><li>Génèse des rythmes cérébraux</li></ul>
+        <!-- <span class="tag">Sur devis</span> -->
       </div>
       <div class="card">
         <div class="num">05</div>
-        <h3>Accompagnement à la publication</h3>
-        <p>Intervention à toutes les étapes précédant la soumission d'un article.</p>
-        <ul><li>Validation des analyses & figures</li><li>Rédaction des sections Méthodes/Résultats</li></ul>
-        <span class="tag">Sur devis</span>
+        <h3>Expertise statistique</h3>
+        <p>Modèles linéaires, mixtes +/- généralisés, statistiques multivariées. (Python / R)</p>
+        <ul><li>Test des hypothèses</li><li>Accompagnement à l'interprétation</li></ul>
+        <!-- <span class="tag">Sur devis</span> -->
       </div>
       <div class="card">
         <div class="num">06</div>
-        <h3>Développement d'outils scientifiques</h3>
-        <p>Scripts et pipelines Python/R sur mesure pour les équipes de recherche.</p>
-        <ul><li>Automatisation</li><li>Intégration de méthodes spécifiques</li></ul>
-        <span class="tag">Sur devis</span>
+        <h3>Accompagnement à la publication</h3>
+        <p>Aide à la soumission d'article.</p>
+        <ul><li>Validation des analyses & figures</li><li>Rédaction des sections Méthodes/Résultats</li></ul>
+        <!-- <span class="tag">Sur devis</span> -->
       </div>
+
     </div>
   </div>
 </section>
